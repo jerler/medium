@@ -5,54 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summon Spirit</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
-<script>
-    // Function to check if the session has expired
-    function checkSessionTimeout() {
-        const authenticated = localStorage.getItem("authenticated");
-        const loginTime = localStorage.getItem("loginTime");
-
-        if (authenticated !== "true" || !loginTime) {
-            // If not authenticated or login time is missing, redirect to login
-            window.location.href = "index.html";
-        } else {
-            // Calculate how much time has passed since login
-            const currentTime = Date.now();
-            const elapsedTime = currentTime - parseInt(loginTime);
-
-            // Check if more than 5 minutes (300,000 ms) have passed
-            if (elapsedTime > 300000) {  // 300,000 ms = 5 minutes
-                // If session expired, log the user out
-                localStorage.removeItem("authenticated");
-                localStorage.removeItem("loginTime");
-                alert("Session expired. Please log in again.");
-                window.location.href = "index.html";
-            }
-        }
-    }
-
-    // Check session timeout on page load
-    checkSessionTimeout();
-
-    // Optional: You can also check session timeout at intervals to keep the check active
-    setInterval(checkSessionTimeout, 60000);  // Check every 60 seconds
-</script>
-
 <body class="summon-page">
-
-    <!-- Candle Image -->
-    <img id="candle" src="candle.png" alt="Candle">
-
     <div id="summonContainer">
-    <p id="spookyText">The veil is thin... call upon the spirits</p>
+        <p id="spookyText">The veil is thin... call upon the spirits</p>
         <input type="text" id="accessCodeInput" placeholder="#">
         <br>
         <button onclick="checkAccessCode()">Summon Spirit</button>
+        <p id="resultMessage"></p>
     </div>
 
-    <p id="resultMessage"></p>
-
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script>  <!-- External JS file -->
 </body>
 </html>
