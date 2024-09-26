@@ -9,12 +9,14 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 body {
     /* Adjust the gradient */
-    background: radial-gradient(circle at 50% 30%, rgba(255,223,0,1) 0%, rgba(0,0,0,1) 30%);
+    background: radial-gradient(circle at 50% 20%, rgba(255,223,0,1) 0%, rgba(0,0,0,1) 40%);
     background-color: black;
+    position: relative;
 }
 
 input[type="text"] {
@@ -23,6 +25,7 @@ input[type="text"] {
     margin-bottom: 20px;
     width: 200px;
     text-align: center;
+    margin-top: 200px; /* Moves the input field further down */
 }
 
 button {
@@ -41,4 +44,25 @@ button:hover {
 #resultMessage {
     margin-top: 20px;
     font-size: 18px;
+}
+
+/* Candle Image Styling */
+#candle {
+    position: absolute;
+    top: 20%;  /* Position the candle near the yellow focal point */
+    width: 100px;
+    animation: floatCandle 3s ease-in-out infinite;
+}
+
+/* Floating Candle Animation */
+@keyframes floatCandle {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
