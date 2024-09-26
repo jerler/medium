@@ -8,29 +8,12 @@
 </head>
 <body class="password-page">
     <div>
-        <h1 id="whoGoesThere">Who goes there?</h1>  <!-- New text -->
+        <h1 id="whoGoesThere">Who goes there?</h1>
         <input type="password" id="passwordInput" placeholder="Password">
         <br>
         <button onclick="checkPassword()">Submit</button>
     </div>
 
-    <script>
-        function checkPassword() {
-            const enteredPassword = document.getElementById("passwordInput").value;
-            if (enteredPassword === "PartingTheVeil") {
-                // Store a flag in localStorage to mark as authenticated
-                localStorage.setItem("authenticated", "true");
-        
-                // Store the current timestamp
-                localStorage.setItem("loginTime", Date.now().toString());
-        
-                // Redirect to the summon page
-                window.location.href = "summon.html";
-            } else {
-                alert("You're not Morgana...");
-            }
-        }
-
-    </script>
+    <script src="scripts.js"></script>  <!-- External JS file -->
 </body>
 </html>
