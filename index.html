@@ -20,11 +20,17 @@
             if (enteredPassword === "PartingTheVeil") {
                 // Store a flag in localStorage to mark as authenticated
                 localStorage.setItem("authenticated", "true");
-                window.location.href = "summon.html";  // Redirect to the summon page
+        
+                // Store the current timestamp
+                localStorage.setItem("loginTime", Date.now().toString());
+        
+                // Redirect to the summon page
+                window.location.href = "summon.html";
             } else {
-                alert("Incorrect password. Try again.");
+                alert("You're not Morgana...");
             }
         }
+
     </script>
 </body>
 </html>
