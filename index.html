@@ -4,25 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 20%;
-        }
-        input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Hello, World!</h1>
@@ -34,27 +16,6 @@
 
     <p id="resultMessage"></p>
 
-    <script>
-        // JavaScript dictionary of valid passcodes
-        const validPasscodes = {
-            '12345': 'Welcome!',
-            'password1': 'Access Granted',
-            'open-sesame': 'You have entered the secret door'
-        };
-
-        function checkAccessCode() {
-            // Get the value from the input field
-            const enteredCode = document.getElementById("accessCodeInput").value;
-
-            // Check if the entered code exists in the dictionary
-            if (validPasscodes[enteredCode]) {
-                document.getElementById("resultMessage").textContent = validPasscodes[enteredCode];
-                document.getElementById("resultMessage").style.color = 'green';
-            } else {
-                document.getElementById("resultMessage").textContent = "Invalid code. Try again!";
-                document.getElementById("resultMessage").style.color = 'red';
-            }
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
