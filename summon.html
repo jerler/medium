@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
+<script>
+    // Check if the user is authenticated
+    if (localStorage.getItem("authenticated") !== "true") {
+        // If not authenticated, redirect to the password page
+        window.location.href = "index.html";
+    }
+</script>
 <body class="summon-page">
 
     <!-- Candle Image -->
