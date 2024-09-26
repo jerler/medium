@@ -8,6 +8,7 @@
 </head>
 <body class="password-page">
     <div>
+        <h1 id="whoGoesThere">Who goes there?</h1>  <!-- New text -->
         <input type="password" id="passwordInput" placeholder="Password">
         <br>
         <button onclick="checkPassword()">Submit</button>
@@ -17,7 +18,7 @@
         function checkPassword() {
             const enteredPassword = document.getElementById("passwordInput").value;
             if (enteredPassword === "PartingTheVeil") {
-                window.location.href = "summon.html";  // Redirect to the renamed main page
+                window.location.href = "summon.html";  // Redirect to the summon page
             } else {
                 alert("Incorrect password. Try again.");
             }
