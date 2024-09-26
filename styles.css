@@ -50,7 +50,7 @@ button:hover {
 #candle {
     position: absolute;
     top: 20%;  /* Position the candle near the yellow focal point */
-    width: 100px;
+    width: 33px; /* Shrinking the candle to 1/3 of its size */
     animation: floatCandle 3s ease-in-out infinite;
 }
 
