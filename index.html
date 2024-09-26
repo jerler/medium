@@ -12,9 +12,49 @@
             text-align: center;
             margin-top: 20%;
         }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
+
+    <p>Enter Access Code:</p>
+    <input type="text" id="accessCodeInput" placeholder="Enter code here">
+    <br>
+    <button onclick="checkAccessCode()">Submit</button>
+
+    <p id="resultMessage"></p>
+
+    <script>
+        // JavaScript dictionary of valid passcodes
+        const validPasscodes = {
+            '12345': 'Welcome!',
+            'password1': 'Access Granted',
+            'open-sesame': 'You have entered the secret door'
+        };
+
+        function checkAccessCode() {
+            // Get the value from the input field
+            const enteredCode = document.getElementById("accessCodeInput").value;
+
+            // Check if the entered code exists in the dictionary
+            if (validPasscodes[enteredCode]) {
+                document.getElementById("resultMessage").textContent = validPasscodes[enteredCode];
+                document.getElementById("resultMessage").style.color = 'green';
+            } else {
+                document.getElementById("resultMessage").textContent = "Invalid code. Try again!";
+                document.getElementById("resultMessage").style.color = 'red';
+            }
+        }
+    </script>
 </body>
 </html>
