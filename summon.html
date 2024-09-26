@@ -8,12 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
 <script>
-    // Check if the user is authenticated
-    if (localStorage.getItem("authenticated") !== "true") {
-        // If not authenticated, redirect to the password page
-        window.location.href = "index.html";
+    // Function to check if the session has expired
+    function checkSessionTimeout() {
+        const authenticated = localStorage.getItem("authenticated");
+        const loginTime = localStorage.getItem("loginTime");
+
+        if (authenticated !== "true" || !loginTime) {
+            // If not authenticated or login time is missing, redirect to login
+            window.location.href = "index.html";
+        } else {
+            // Calculate how much time has passed since login
+            const currentTime = Date.now();
+            const elapsedTime = currentTime - parseInt(loginTime);
+
+            // Check if more than 5 minutes (300,000 ms) have passed
+            if (elapsedTime > 300000) {  // 300,000 ms = 5 minutes
+                // If session expired, log the user out
+                localStorage.removeItem("authenticated");
+                localStorage.removeItem("loginTime");
+                alert("Session expired. Please log in again.");
+                window.location.href = "index.html";
+            }
+        }
     }
+
+    // Check session timeout on page load
+    checkSessionTimeout();
+
+    // Optional: You can also check session timeout at intervals to keep the check active
+    setInterval(checkSessionTimeout, 60000);  // Check every 60 seconds
 </script>
+
 <body class="summon-page">
 
     <!-- Candle Image -->
