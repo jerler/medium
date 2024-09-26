@@ -46,6 +46,15 @@ button:hover {
     font-size: 18px;
 }
 
+#spookyText {
+    font-family: 'Great Vibes', cursive;  /* Or try 'UnifrakturMaguntia' */
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Adds a slight shadow to make it more readable */
+    margin-bottom: 30px;
+}
+
+
 /* Candle Image Styling */
 #candle {
     position: absolute;
