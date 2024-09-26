@@ -19,13 +19,30 @@ body {
     position: relative;
 }
 
+/* Container for call-to-action and input */
+#summonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;  /* Moves the group down, but keeps them together */
+}
+
+/* Spooky Call-to-Action Text */
+#spookyText {
+    font-family: 'Great Vibes', cursive;  /* You can switch to 'UnifrakturMaguntia' if preferred */
+    font-size: 36px;  /* Larger font size for more emphasis */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;  /* Tighten spacing between the text and the input field */
+}
+
+/* Input field and button styles remain the same */
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
     width: 200px;
     text-align: center;
-    margin-top: 200px; /* Moves the input field further down */
 }
 
 button {
@@ -41,17 +58,10 @@ button:hover {
     background-color: #666;
 }
 
+
 #resultMessage {
     margin-top: 20px;
     font-size: 18px;
-}
-
-#spookyText {
-    font-family: 'Great Vibes', cursive;  /* Or try 'UnifrakturMaguntia' */
-    font-size: 24px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  /* Adds a slight shadow to make it more readable */
-    margin-bottom: 30px;
 }
 
 
