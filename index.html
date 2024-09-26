@@ -18,6 +18,8 @@
         function checkPassword() {
             const enteredPassword = document.getElementById("passwordInput").value;
             if (enteredPassword === "PartingTheVeil") {
+                // Store a flag in localStorage to mark as authenticated
+                localStorage.setItem("authenticated", "true");
                 window.location.href = "summon.html";  // Redirect to the summon page
             } else {
                 alert("Incorrect password. Try again.");
