@@ -9,16 +9,18 @@
 <body class="summon-page">
     <div id="summonContainer">
         <p id="spookyText">The veil is thin... call upon the spirits</p>
-
-        <!-- Candle Image -->
+        
+        <!-- Candle Image, initially visible -->
         <img id="candle" src="candle.png" alt="Candle" />
+
+        <!-- Message div, initially hidden -->
+        <div id="resultMessage" class="hidden"></div>
         
         <input type="text" id="accessCodeInput" placeholder="#">
         <br>
         <button onclick="checkAccessCode()">Summon Spirit</button>
-        <p id="resultMessage"></p>
     </div>
 
-    <script src="scripts.js"></script>  <!-- External JS file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
