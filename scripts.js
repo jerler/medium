@@ -9,7 +9,7 @@ const validPasscodes = {
     'E90C3': 'A crackly voice chippers from the void: “You simply... cannot fathom... the amount of cocaine I have brewed with this spoon. Dearie, don’t take life too seriously”',
     '4B5DA': 'A warm voice calls from the darkness: “My darling Ellie, if it ain’t broke we’ll be sure to break it eh? Trust your gut and maybe be cautious with those Buskers...',
     'C7E3F': 'A somber voice calls out to you in the darkness: “you and your brother were always destined for greatness. Don’t let the tragedies you’ve survived mask your future. It’s time to let go of old shadows and step into the light where you belong.”',
-    'A68F2': 'A loving voice calls out: "Your family’s pride burns brighter than any flame. Let go of the ashes, and carry their light forward"',
+    'A60F2': 'A loving voice calls out: "Your family’s pride burns brighter than any flame. Let go of the ashes, and carry their light forward"',
     'TEST' : 'Hey Izzy! This is where your magic message will appear'
 };
 
