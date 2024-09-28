@@ -73,8 +73,8 @@ button:hover {
 /* Scrollable Message Styling */
 #resultMessage {
     position: absolute;
-    top: 20%; /* Position it near where the candle is */
-    width: 200px; /* Match the width of the input box */
+    top: 30%; /* Position it near where the candle is */
+    width: 80%;
     height: auto; /* Allow the height to adjust based on content */
     max-height: 150px; /* Add a max height in case the message is long */
     overflow-y: auto; /* Allow scrolling if the content is too long */
