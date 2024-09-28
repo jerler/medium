@@ -10,7 +10,8 @@ const validPasscodes = {
     '4B5DA': 'A warm voice calls from the darkness: “My darling Ellie, if it ain’t broke we’ll be sure to break it eh? Trust your gut and maybe be cautious with those Buskers...',
     'C7E3F': 'A somber voice calls out to you in the darkness: “you and your brother were always destined for greatness. Don’t let the tragedies you’ve survived mask your future. It’s time to let go of old shadows and step into the light where you belong.”',
     'A60F2': 'A loving voice calls out: "Your family’s pride burns brighter than any flame. Let go of the ashes, and carry their light forward"',
-    'TEST' : 'Hey Izzy! This is where your magic message will appear'
+    'TEST' : 'Hey Izzy! This is where your magic message will appear',
+    'T430A': 'A familiar voice sounds close by: "My old friend, how comforting it is to feel your presence once more. Time slips away from me quickly now, so I must be brief. I don’t remember all the details, but I recall Xavier urging me to push the boundaries of my trick, to try something more dangerous. It was Dr. Trinket who sold me the magic box, and while I trusted her, I never saw anyone tamper with it… not with my own eyes, at least. But I cannot rest until you know this—Xavier Mindweaver, he’s not who he claims to be. He’s more than a trickster… he’s a criminal. He was the leader of the Phantom Syndicate and cannot be trusted. Please, don’t let him escape his fate."',
 };
 
 
