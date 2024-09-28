@@ -1,21 +1,21 @@
 // JavaScript dictionary of valid passcodes
 const validPasscodes = {
-    'illusionistsMagicHat': 'A boisterous voice calls out from the darkness: “A magnificent hat for magnificent fame - work hard so the world will remember your name! And beware those who twist thoughts for selfish gain...”',
-    'escapeartistslocket': 'A soft voice warms your heart: "The past is a chain that only you can unlock. But some links are stronger than they seem." As the voice quiets, you see images chained together... a young Sue Dini playing with their younger sibling at the circus, a lion with a bushy mane, Sue Dini’s family singing around a birthday cake, a roaring fire, Sue Dini escaping the burning canopy, and unmistakably, Sue Dini’s younger sibling also making it to safety.',
-    'hypnotistspocketwatch': 'A squeaking voice bubbles through the darkness: “You’ve spent a lifetime mastering minds, but maybe it’s time to trust your heart. Some things can’t be controlled—only felt.”',
-    'mentalistsCane': 'A somber voice whispers through the darkness: “Beware the tangled web you weave, where shadows lurk and liars grieve. The path you walk is not your own, our blood runs deep—you’re not alone. Turn back before it’s far too late, for power gained may seal your fate.”',
-    'cardTrickstersCards': 'A husky voice beckons from the darkness: “The cards may be stacked, kiddo, but it’s how you play ‘em that paves your fate. Your heart suits you well—it’s always been in the right place. You’ve been the ace up our sleeve, and we’re proud of you for that.”',
-    'swordswallowersDagger': 'A honey voice echos in the darkness: "A blade is only as sharp as the will that wields it..." But as the voice fades away you see several images, coming quickly in a dizzying array - a circus tent, a lion roaring, and a long pause as a thin candle flickers and falls onto the ground, catching rope on fire which quickly spreads to the canopy. Then darkness again as the images leave you”',
-    'alchemistsMagicSpoon': 'A crackly voice chippers from the void: “You simply... cannot fathom... the amount of cocaine I have brewed with this spoon. Dearie, don’t take life too seriously”',
-    'artificersLuckyWrench': 'A warm voice calls from the darkness: “My darling Ellie, if it ain’t broke we’ll be sure to break it eh? Trust your gut and maybe be cautious with those Buskers...',
-    'bartholomewsMagicGun': 'A somber voice calls out to you in the darkness: “you and your brother were always destined for greatness. Don’t let the tragedies you’ve survived mask your future. It’s time to let go of old shadows and step into the light where you belong.”',
-    'beastmastersFamilyPhoto': 'A loving voice calls out: "Your family’s pride burns brighter than any flame. Let go of the ashes, and carry their light forward"',
+    '5A3B9': 'A boisterous voice calls out from the darkness: “A magnificent hat for magnificent fame - work hard so the world will remember your name! And beware those who twist thoughts for selfish gain...”',
+    'D47F1': 'A soft voice warms your heart: "The past is a chain that only you can unlock. But some links are stronger than they seem." As the voice quiets, you see images chained together... a young Sue Dini playing with their younger sibling at the circus, a lion with a bushy mane, Sue Dini’s family singing around a birthday cake, a roaring fire, Sue Dini escaping the burning canopy, and unmistakably, Sue Dini’s younger sibling also making it to safety.',
+    'B2C8E': 'A squeaking voice bubbles through the darkness: “You’ve spent a lifetime mastering minds, but maybe it’s time to trust your heart. Some things can’t be controlled—only felt.”',
+    '8F9A2': 'A somber voice whispers through the darkness: “Beware the tangled web you weave, where shadows lurk and liars grieve. The path you walk is not your own, our blood runs deep—you’re not alone. Turn back before it’s far too late, for power gained may seal your fate.”',
+    '3D6E7': 'A husky voice beckons from the darkness: “The cards may be stacked, kiddo, but it’s how you play ‘em that paves your fate. Your heart suits you well—it’s always been in the right place. You’ve been the ace up our sleeve, and we’re proud of you for that.”',
+    '1AF4B': 'A honey voice echos in the darkness: "A blade is only as sharp as the will that wields it..." But as the voice fades away you see several images, coming quickly in a dizzying array - a circus tent, a lion roaring, and a long pause as a thin candle flickers and falls onto the ground, catching rope on fire which quickly spreads to the canopy. Then darkness again as the images leave you”',
+    'E90C3': 'A crackly voice chippers from the void: “You simply... cannot fathom... the amount of cocaine I have brewed with this spoon. Dearie, don’t take life too seriously”',
+    '4B5DA': 'A warm voice calls from the darkness: “My darling Ellie, if it ain’t broke we’ll be sure to break it eh? Trust your gut and maybe be cautious with those Buskers...',
+    'C7E3F': 'A somber voice calls out to you in the darkness: “you and your brother were always destined for greatness. Don’t let the tragedies you’ve survived mask your future. It’s time to let go of old shadows and step into the light where you belong.”',
+    'A68F2': 'A loving voice calls out: "Your family’s pride burns brighter than any flame. Let go of the ashes, and carry their light forward"',
 };
 
 
 function checkAccessCode() {
     // Get the value from the input field
-    const enteredCode = document.getElementById("accessCodeInput").value;
+    const enteredCode = document.getElementById("accessCodeInput").value.toUpperCase();
 
     // Check if the entered code exists in the dictionary
     if (validPasscodes[enteredCode]) {
@@ -43,8 +43,8 @@ function checkAccessCode() {
 
 // Function to check password and log in the user
 function checkPassword() {
-    const enteredPassword = document.getElementById("passwordInput").value;
-    if (enteredPassword === "PartingTheVeil") {
+    const enteredPassword = document.getElementById("passwordInput").value.toUpperCase();
+    if (enteredPassword === "VEILPARTING") {
         // Store a flag in localStorage to mark as authenticated
         localStorage.setItem("authenticated", "true");
 
