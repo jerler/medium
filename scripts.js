@@ -19,11 +19,25 @@ function checkAccessCode() {
 
     // Check if the entered code exists in the dictionary
     if (validPasscodes[enteredCode]) {
-        document.getElementById("resultMessage").textContent = validPasscodes[enteredCode];
-        document.getElementById("resultMessage").style.color = 'green';
+        // Hide the candle by fading it out
+        const candle = document.getElementById("candle");
+        candle.style.opacity = 0;
+
+        // After the fade-out is complete (1s), hide the candle and show the message
+        setTimeout(() => {
+            candle.classList.add('hidden');  // Hide the candle fully
+            const resultMessage = document.getElementById("resultMessage");
+            resultMessage.textContent = validPasscodes[enteredCode];
+            resultMessage.classList.remove('hidden');  // Show the message div
+            resultMessage.classList.add('show');  // Trigger fade-in effect
+        }, 1000);  // Match the CSS transition duration (1s)
     } else {
-        document.getElementById("resultMessage").textContent = "Nothing can be heard";
-        document.getElementById("resultMessage").style.color = 'red';
+         // Show an error message
+        const resultMessage = document.getElementById("resultMessage");
+        resultMessage.textContent = "Nothing can be heard";
+        resultMessage.classList.remove('hidden');
+        resultMessage.classList.add('show');
+        resultMessage.style.color = 'red';
     }
 }
 
