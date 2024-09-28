@@ -80,7 +80,7 @@ button:hover {
     overflow-y: auto; /* Allow scrolling if the content is too long */
     background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
     color: white;
-    font-size: 14px;
+    font-size: 1.3rem;
     padding: 10px; /* Add some padding for better readability */
     text-align: center;
     border-radius: 5px;
