@@ -58,11 +58,6 @@ button:hover {
     background-color: #666;
 }
 
-#resultMessage {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
 /* Candle Image Styling */
 #candle {
     position: absolute;
@@ -76,6 +71,8 @@ button:hover {
 }
 
 #resultMessage {
+    margin-top: 20px;
+    font-size: 18px;
     position: absolute;
     top: 20%; /* Same as the candle */
     width: 33px; /* Same width as the candle */
